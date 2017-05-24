@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-br" style="margin:0px;">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- As 3 meta tags acima *devem* vir em primeiro lugar dentro do `head`; qualquer outro conteúdo deve vir *após* essas tags -->
+    <title>Comp. Distribuída</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- HTML5 shim e Respond.js para suporte no IE8 de elementos HTML5 e media queries -->
+    <!-- ALERTA: Respond.js não funciona se você visualizar uma página file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+ <body >
+
+  <section>
+    <nav class="navbar navbar-default"style="margin:0px; background-color:#b8cded;">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <h1>Computação Distribuída <small> Apoio</small></h1>
+        </div>
+
+      <ul class="nav navbar-nav navbar-right">
+
+        <li class="dropdown">
+          <a href="#"  style="background-color:#b8cded; height:100%;"class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Newsletter <span class="caret"></span></a>
+          <ul class="dropdown-menu" style="background-color:#c4d6ed; border:solid; border-color:#c4d6ed;">
+            <li>
+              <form action="back_end.php" >
+               <h2 style="margin:0px;">Newsletter</h2><br>
+               <label for="name">Nome:</label><br><input type="text" name="name" id="name"  class="btn btn-default" required><br>
+                <label for="email">Email:</label><br><input type="email" name="email" id="email"  class="btn btn-default" required><br>
+                <label for="birth">Nascimento:</label><br><input  class="btn btn-default" type="date" id="birth" name="birth" style="width:100%" required><br><!--FAZER ESSE CARA WIDTH 100% -->
+                <li role="separator" class="divider"></li>
+               <input type="submit"  class="btn btn-default" style="float:right">
+              </form>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+ </section>
+   <aside class="fr"><!-- Referências-->
+     <div class="list-group">
+      <a href="#" class="list-group-item active">
+        <h4 class="list-group-item-heading">Refências Bibliográficas</h4><br>
+        <p class="list-group-item-text">TANEMBAUM, A.; Steen M. Sistemas Distribuídos: princípios e paradigmas. 2. ed. São Paulo: Editora Pearson, 2008.</p><br>
+        <p class="list-group-item-text">COULOURIS, G. et al. Sistemas Distribuídos conceitos e projetos. 4. ed. Porto Alegre: Editora Bookman, 2007.</p><br>
+        <p class="list-group-item-text">POTTS, Stephen. Aprenda em 24 Horas Web Services. Rio de Janeiro: Campus, 2003.</p><br>
+        <p class="list-group-item-text">COULOURIS, G.; DOLLIMORE, J.; KINDBERG, T. Distributed Systems: Concepts and Design. 3. ed. London – UK: Addison - Wesley e Pearson Education, 2001.</p><br>
+        <p class="list-group-item-text">LIU, M. L. Distributed Computing: Principles and Applications. Pearson Addison Wesley, 2004.</p><br>
+        <p class="list-group-item-text">TEIXEIRA JUNIOR, J. H. Do Mainframe para a Computação Distribuída. Rio de Janeiro: IBPI PRESS, 1997.</p><br>
+        <p class="list-group-item-text">RICCIONI, P. R. Introdução a Objetos Distribuídos com CORBA. Florianópolis: Visual Books, 2000.</p><br>
+        <p class="list-group-item-text">POTTS, Stephen. Aprenda em 24 Horas Web Services. Rio de Janeiro: Campus, 2003.</p><br>
+        <p class="list-group-item-text">STEVENS, W. R.; FENNER, B.; RUDOFF, A. M. Programação de Rede UNIX. API para sockets de rede. 3. ed. Editora Artmed, 2005.</p><br>
+      </a>
+    </div>
+   </aside>
+ <main style="width:90%; float:left;">
+   <div class="jumbotron" style=" float:left; width:100%; margin:0px; padding:0px"> <!--lista -->
+     <div class="list-group" style="width:100%; margin:0px; padding:0px;" >
+
+      <button type="button" class="list-group-item">
+        <h3>Computação Distribuída:<small> Introdução e exemplos de uso</small> </h3>
+        <p>
+          Sistema distribuído é uma porção de computadores, todos conectados em rede, coordenados por uma, ou mais, máquina(s) administradora(s) e que utilizam softwares que permitam o compartilhamento de seus recursos, como memória, processamento, hardware (como impressora etc) para um único fim, como quebrar um código, criptografar ou descobrir a melhor solução de um problema em matemática. Ou seja, são vários computadores, que se comportam como um só, para fazer uma coisa de uma maneira rápida e eficiente, ou ter muito espaço de armazenamento.
+          São sistemas muito usados em supercomputadores, que fazem pesquisas científicas, predições climáticas, descobrir novas partículas, controlar epidemias e outras doenças, fazer simulações e tudo; foi-se o tempo que ciência era feita no papel, lápis e laboratório.
+          <br>Fonte: programacaoprogressiva.net
+        </p>
+
+      </button>
+      <button type="button" class="list-group-item">
+        <h3>Exemplo de Sistema distribuído:<small> Clientes e Servidores</small> </h3>
+        <p>
+          Lembre-se da definição: dividir as tarefas.
+
+          Em um jogo online, Worms Armageddon, por exemplo (aos gammers atuais, perdão, não sou muito chegado em jogos, só lembrei esse de minha época).
+
+          Se meu jogador, 'Jar Lyoto' atira com uma bazuca em uma direção e com uma determinada força, sabendo a força do vento.
+          Essa informação é enviada ao servidor, que checa e calcula onde esse tiro vai, constatando que vai na cabeça do jogador 'Rosy Rousey'. O servidor envia essa informação para Rosy, que agora tem um jogador a menos, assim como pontos a menos, e informações novas sobre o cenário e vento.
+
+          Agora ela, com o jogador 'Florisbull Shogun' atira uma granada contra o jogador 'Branco Machida'. O servidor checa as informações de vendo, de posição, de força...e vê que errou.
+
+          Notou o 'jogador A', 'servidor', 'jogador B'...em outras palavras: cliente, servidor, cliente, servidor...isso é um sistema distribuído.
+          Não está acontecendo no seu computador, isolado.
+
+          Veja o nome 'sistema', que no caso é o computador da Rosy e o meu, e o servidor que administra o jogo Worms Armageddon. Esse é o sistema, que distribui as tarefas, com um fim único, o jogo.
+          <br>Fonte: programacaoprogressiva.net
+        </p>
+      </button>
+      <button type="button" class="list-group-item">
+        <h3>Exemplo de Sistema distribuído:<small> P2P</small> </h3>
+        Mas um exemplo prático vale mais que mil artigos.
+        P2P, ou peer-to-peer, é um ótimo exemplo de sistema distribuído.
+        São os famosos programas de torrent. Neles, não há uma central de rede, ninguém é de ninguém e é dando que se recebe.
+        Ou seja, quanto mais você compartilha, mais compartilham você, e mais rápido você recebe dados.
+        E recebe de todos os lugares e pessoas do mundo.
+        Se está baixando um filme, por exemplo, pode está recebendo o começo dele de um cara da Argentina, 3 minutos do meio de um Canadense e os 5 minutos finais de um Chinês. O importante é receber.
+        E recebe, e geralmente rápido.
+        <br>Fonte: programacaoprogressiva.net
+      </button>
+
+      <button type="button" class="list-group-item" style="margin:0px; padding:0px;">
+        <div class="bs-example" data-example-id="responsive-embed-4by3-iframe-youtube">
+          <div class="embed-responsive embed-responsive-4by3">
+           <iframe style="margin:0px; padding:0px;" class="embed-responsive-item" width="560" height="315" src="https://www.youtube.com/embed/FO0DV_cEYXs" frameborder="0" allowfullscreen></iframe>
+          </div>
+        </div>
+      </button>
+    </div>
+  </div>
+ </main>
+
+
+  <!-- jQuery (obrigatório para plugins JavaScript do Bootstrap) -->
+  <!--  <script src="js/jquery-3.2.1.min"></script>-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <!-- Inclui todos os plugins compilados (abaixo), ou inclua arquivos separadados se necessário -->
+  <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
